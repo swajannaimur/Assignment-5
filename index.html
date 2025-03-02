@@ -45,10 +45,10 @@
                 <div class="flex items-center gap-2 bg-color rounded-[32px] px-5  py-4">
                     <div><img src="assets/checkbox.png" alt=""></div>
                     <div>
-                        <p class="font-bold text-xl">23</p>
+                        <p id="done-tasks" class="font-bold text-xl">23</p>
                     </div>
                 </div>
-                <div class="bg-color p-3 rounded-full"><img src="assets/theme-btn.png" alt=""></div>
+                <div id="random-color" class="bg-color p-3 rounded-full"><img src="assets/theme-btn.png" alt=""></div>
             </div>
         </nav>
     </header>
@@ -64,8 +64,8 @@
                             <div>
                                 <p class="text-base">Task Assigned</p>
                             </div>
-                            <div>
-                                <h2 class="text-lg font-bold">06</h2>
+                            <div >
+                                <h2 id="assigned-tasks" class="text-lg font-bold">06</h2>
                             </div>
                         </div>
                     </div>
@@ -79,7 +79,7 @@
                         </div>
                     </div>
                     <div class="flex items-center gap-4 bg-color p-4 rounded-xl">
-                        <div class="bg-white p-3 rounded-full"><img src="assets/calender.png" alt=""></div>
+                        <div class="bg-white p-3 rounded-full "><img src="assets/calender.png" alt="" ></div>
                         <div>
                             <div>
                                 <p id="today-date" class="text-lg font-semibold "></p>
@@ -108,7 +108,7 @@
                                 <div class="font-semibold">21 March 2025</div>
                             </div>
                             <div><button
-                                    class="bg-[#3752FD] text-white border-2 cursor-pointer text-base font-semibold p-3 rounded-xl hover:bg-white hover:text-[#3752FD]  hover:transition">Completed</button>
+                                    class="btn-complete bg-[#3752FD] text-white border-2 cursor-pointer text-base font-semibold p-3 rounded-xl hover:bg-white hover:text-[#3752FD]  hover:transition ">Completed</button>
                             </div>
                         </div>
                     </div>
@@ -129,8 +129,8 @@
                                 <div>Deadline</div>
                                 <div class="font-semibold">25 March 2025</div>
                             </div>
-                            <div><button
-                                    class="bg-[#3752FD] text-white border-2 cursor-pointer text-base font-semibold p-3 rounded-xl hover:bg-white hover:text-[#3752FD]  hover:transition">Completed</button>
+                            <div><button  
+                                    class=" btn-complete bg-[#3752FD] text-white border-2 cursor-pointer text-base font-semibold p-3 rounded-xl hover:bg-white hover:text-[#3752FD]  hover:transition">Completed</button>
                             </div>
                         </div>
                     </div>
@@ -151,8 +151,8 @@
                                 <div>Deadline</div>
                                 <div class="font-semibold">01 February 2025</div>
                             </div>
-                            <div><button
-                                    class="bg-[#3752FD] text-white border-2 cursor-pointer text-base font-semibold p-3 rounded-xl hover:bg-white hover:text-[#3752FD]  hover:transition">Completed</button>
+                            <div><button 
+                                    class=" btn-complete bg-[#3752FD] text-white border-2 cursor-pointer text-base font-semibold p-3 rounded-xl hover:bg-white hover:text-[#3752FD]  hover:transition">Completed</button>
                             </div>
                         </div>
                     </div>
@@ -174,8 +174,8 @@
                                 <div>Deadline</div>
                                 <div class="font-semibold">5 February 2025</div>
                             </div>
-                            <div><button
-                                    class="bg-[#3752FD] text-white border-2 cursor-pointer text-base font-semibold p-3 rounded-xl hover:bg-white hover:text-[#3752FD]  hover:transition">Completed</button>
+                            <div><button 
+                                    class=" btn-complete bg-[#3752FD] text-white border-2 cursor-pointer text-base font-semibold p-3 rounded-xl hover:bg-white hover:text-[#3752FD]  hover:transition">Completed</button>
                             </div>
                         </div>
                     </div>
@@ -197,8 +197,8 @@
                                 <div>Deadline</div>
                                 <div class="font-semibold">7 February 2025</div>
                             </div>
-                            <div><button
-                                    class="bg-[#3752FD] text-white border-2 cursor-pointer text-base font-semibold p-3 rounded-xl hover:bg-white hover:text-[#3752FD]  hover:transition">Completed</button>
+                            <div><button 
+                                    class=" btn-complete bg-[#3752FD] text-white border-2 cursor-pointer text-base font-semibold p-3 rounded-xl hover:bg-white hover:text-[#3752FD]  hover:transition">Completed</button>
                             </div>
                         </div>
                     </div>
@@ -221,11 +221,10 @@
                                 <div class="font-semibold">9 February 2025</div>
                             </div>
                             <div><button
-                                    class="bg-[#3752FD] text-white border-2 cursor-pointer text-base font-semibold p-3 rounded-xl hover:bg-white hover:text-[#3752FD]  hover:transition">Completed</button>
+                                    class=" btn-complete bg-[#3752FD] text-white border-2 cursor-pointer text-base font-semibold p-3 rounded-xl hover:bg-white hover:text-[#3752FD]  hover:transition " >Completed</button>
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
 
@@ -253,6 +252,9 @@
             window.location.href = "blog.html";
         })
     </script>
+    <script src="script/date.js"></script>
+    <script src="script/randomColor.js"></script>
+    <script src="script/task.js"></script>
 </body>
 
 </html>
