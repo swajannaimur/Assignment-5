@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Google font linking -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Daisy Ui Linking -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style>
+        .poppins-font {
+            font-family: "Poppins", sans-serif;
+        }
+
+        .bg-color {
+            background-color: #f4f7ff;
+        }
+    </style>
+</head>
+
+<body class="bg-[#f4f7ff] poppins-font min-h-screen">
+    <!-- Header -->
+    <header class="max-w-7xl mx-auto p-5">
+        <!-- navbar  -->
+        <nav class="flex justify-between items-center bg-white px-4 py-2 shadow-sm rounded-2xl">
+            <div class="flex items-center gap-2 ">
+                <div><img src="assets/logo.png" alt="" class="w-8"></div>
+                <div>
+                    <p class="text-xl">Dev<span class="font-bold">Board</span></p>
+                </div>
+            </div>
+
+            <div class="text-center"><button id="back"
+                    class="bg-[#3752FD] text-white border-2 cursor-pointer text-base font-bold p-3 rounded-xl hover:bg-white hover:text-[#3752FD]  hover:transition ">Back
+                    To Desk</button></div>
+
+        </nav>
+    </header>
+
+
+    <section class="max-w-7xl mx-auto p-5">
+        <div>
+            <p class="text-2xl text-center font-bold">Blogs</p>
+        </div>
+        <!-- Questions  -->
+        <div class="mt-5 space-y-6">
+            <div class="bg-white p-5 rounded-xl space-y-5">
+                <div class="border-b-2 border-[#c5c7d1] border-dashed">
+                    <p class="text-xl font-bold pb-5">Question-1: What are the different ways to select an element in
+                        the
+                        DOM?
+                    </p>
+                </div>
+                <div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore expedita, blanditiis nobis
+                        explicabo reprehenderit voluptate deserunt, eaque atque, consequatur nihil enim et ipsa illum.
+                        Praesentium ex reprehenderit quo maxime fuga culpa laborum ipsam porro.</p>
+                </div>
+            </div>
+            <div class="bg-white p-5 rounded-xl space-y-5">
+                <div class="border-b-2 border-[#c5c7d1] border-dashed">
+                    <p class="text-xl font-bold pb-5">Question-2: What is the difference between innerHTML, innerText,
+                        and textContent ?
+                    </p>
+                </div>
+                <div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore expedita, blanditiis nobis
+                        explicabo reprehenderit voluptate deserunt, eaque atque, consequatur nihil enim et ipsa illum.
+                        Praesentium ex reprehenderit quo maxime fuga culpa laborum ipsam porro.</p>
+                </div>
+            </div>
+            <div class="bg-white p-5 rounded-xl space-y-5">
+                <div class="border-b-2 border-[#c5c7d1] border-dashed">
+                    <p class="text-xl font-bold pb-5">Question-3: What is event delegation in the DOM?
+                    </p>
+                </div>
+                <div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore expedita, blanditiis nobis
+                        explicabo reprehenderit voluptate deserunt, eaque atque, consequatur nihil enim et ipsa illum.
+                        Praesentium ex reprehenderit quo maxime fuga culpa laborum ipsam porro.</p>
+                </div>
+            </div>
+            <div class="bg-white p-5 rounded-xl space-y-5">
+                <div class="border-b-2 border-[#c5c7d1] border-dashed">
+                    <p class="text-xl font-bold pb-5">Question-4: What is event bubbling in the DOM?
+                    </p>
+                </div>
+                <div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore expedita, blanditiis nobis
+                        explicabo reprehenderit voluptate deserunt, eaque atque, consequatur nihil enim et ipsa illum.
+                        Praesentium ex reprehenderit quo maxime fuga culpa laborum ipsam porro.</p>
+                </div>
+            </div>
+            <div class="bg-white p-5 rounded-xl space-y-5">
+                <div class="border-b-2 border-[#c5c7d1] border-dashed">
+                    <p class="text-xl font-bold pb-5">Question-5: How do you create, add, and remove elements using
+                        JavaScript?
+                    </p>
+                </div>
+                <div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore expedita, blanditiis nobis
+                        explicabo reprehenderit voluptate deserunt, eaque atque, consequatur nihil enim et ipsa illum.
+                        Praesentium ex reprehenderit quo maxime fuga culpa laborum ipsam porro.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JS File -->
+    <script>
+        document.getElementById('back').addEventListener('click', function () {
+            window.location.href = "index.html";
+        })
+    </script>
+</body>
+
+</html>
