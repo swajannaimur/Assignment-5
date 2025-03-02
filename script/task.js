@@ -18,5 +18,12 @@ for (button of buttons) {
         if(newTask === 0 ){
             alert(" Congrats, You've Done All the tasks!!")
         }
+        let activity = document.getElementById('activity')
+        let time = new Date ()
+        let history = document.createElement('p')
+        history.innerText = `this is clicked by time ${time}`
+        activity.appendChild(history)
+        
+
     })
 }
