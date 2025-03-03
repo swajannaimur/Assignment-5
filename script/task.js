@@ -23,11 +23,14 @@ for (button of buttons) {
         let time = new Date()
         let timeFormat = time.toLocaleTimeString()
         let history = document.createElement('p')
+        history.classList.add('bg-color')
+        history.classList.add('p-4')
+        history.classList.add('rounded-xl')
         activity.appendChild(history)
         
         let card = event.target.closest('.card')
         let cardHeading = card.querySelector('.card-heading').innerText
-        history.innerText = `${cardHeading} is clicked by time ${timeFormat}`
+        history.innerText = `You have completed the task ${cardHeading} at ${timeFormat}`
         
     })
 }
