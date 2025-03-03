@@ -19,15 +19,22 @@ for (button of buttons) {
             alert(" Congrats, You've Done All the tasks!!")
         }
 
-        
         let activity = document.getElementById('activity')
         let time = new Date()
+        let timeFormat = time.toLocaleTimeString()
         let history = document.createElement('p')
-        history.innerText = ` is clicked by time ${time}`
         activity.appendChild(history)
-
-        // let card = event.target.closest('.card')
-        // let cardHeading = card.querySelector('.card-heading').innerText
+        
+        let card = event.target.closest('.card')
+        let cardHeading = card.querySelector('.card-heading').innerText
+        history.innerText = `${cardHeading} is clicked by time ${timeFormat}`
+        
     })
 }
+
+
+document.getElementById('clear-history').addEventListener('click', function(){
+     document.getElementById('activity').innerText = ''
+
+})
 
